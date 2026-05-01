@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Feedback Form</title>
+    <style>
+        body {
+            background-color: #8fa1b6; /* bluish background */
+            font-family: "Times New Roman", serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            font-size: 18px;
+            display: inline-block;
+            width: 80px;
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 250px;
+            padding: 5px;
+            background-color: #d3d3d3;
+            border: 1px solid #888;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        .rating {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        .rating label {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 5px 15px;
+            font-size: 16px;
+            border: 1px solid #888;
+            background-color: #d3d3d3;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Feedback Form</h1>
+
+    <div class="form-container">
+        <form action="/data" method="post"></form>
+            <div>
+                <label>Name:</label>
+                <input type="text" name="name">
+            </div>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
+
+            <div>
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <div class="rating">
+                Rating:
+                <label><input type="radio" name="rating"> Bad</label>
+                <label><input type="radio" name="rating"> Average</label>
+                <label><input type="radio" name="rating"> Good</label>
+                <label><input type="radio" name="rating"> Very Good</label>
+                <label><input type="radio" name="rating"> Excellent</label>
+            </div>
+
+            <div style="text-align:center;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
