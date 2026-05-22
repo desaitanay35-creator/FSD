@@ -1,8 +1,8 @@
 const twilio = require('twilio');
 
 // 🔑 Replace with your credentials
-const accountSid = 'ABCDECDXKNFVXNJVKJFSHSSDKS';
-const authToken = 'MSMNCSVCJHVCZCSGCBSDBGASDDS';
+const accountSid = 'xyz';
+const authToken = 'zxs';
 
 const client = new twilio(accountSid, authToken);
 
