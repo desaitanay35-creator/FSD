@@ -6,6 +6,10 @@ function US8() {
     const [todo, settodo] = useState([])
     
     const addtask = () => {
+        if (!task.trim() ) {
+            return;
+
+         }
         settodo([...todo, {id:Date.now(), name: task }])
         settask("")
     }
